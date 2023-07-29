@@ -10,6 +10,12 @@
     z-index: 200;
 }
 
+.nav-link{
+  display: flex;
+  justify-items:space-between;
+}
+
+
 .btn-gold {
     background-color: rgb(214, 102, 32);
     -webkit-clip-path: polygon(0 0,calc(100% - 1rem) 0,100% 50%,calc(100% - 1rem) 100%,0 100%);
@@ -60,12 +66,14 @@ button[name=search]{
     width: 100%;
     bottom: 0;
     object-fit: cover;
-    z-index: -1; /* Put the video behind the content */
+    z-index: -1; /* Puts the video behind the content */
   }
 
   h1{
-    color: #fff;
+    color:rgb(200, 243, 82);
     font-weight: bold;
+    font-family: 'Cinzel', serif;
+    text-align: center;
   }
 
   .lead{
@@ -84,13 +92,16 @@ button[name=search]{
     background: linear-gradient(to right, #35791fd8,rgba(14, 77, 22, 0.883));
     border-radius:10px;
     border:none;
-    margin-top: 200px;
-    
+    display: grid;
+    position: relative;
+        
+  
     .card-body{
       text-align:center;
       position:relative;
       height:220px;
       padding-top: 60px;
+     
       
       .icon{
         color:#fff;
@@ -132,6 +143,117 @@ button[name=search]{
 
 } 
 
+.ptext{
+  color: #fff;
+  position: relative;
+  z-index: inherit;
+  text-decoration: none;
+  
+}
+
+@media screen and (max-width:820px) {
+  h1{
+    color:rgb(200, 243, 82);
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    position: relative;
+    z-index: 100;
+    padding: 0%;
+    
+  }
+
+  .lead{
+    font-weight: bold;
+    font-size: large;
+  }
+  .ptext{
+    font-size: 1.2rem;
+  }
+  div.card{
+    background: linear-gradient(to right, #35791fd8,rgba(14, 77, 22, 0.883));
+    border-radius:10px;
+    border:none;
+    display: grid;
+    position: relative;
+    
+        
+  
+    .card-body{
+      text-align:center;
+      position:relative;
+      height:220px;
+      padding-top: 35px;
+      margin-bottom: 6px;
+      padding-bottom: 6px;
+
+      
+      .icon{
+        color:#fff;
+        font-size:40px;
+        z-index:100;
+        position:relative;
+      }
+
+    }
+      .overlayer{
+        position:absolute;
+        right:5px;
+        bottom:5px;
+        height:40px;
+        width:40px;
+        background: linear-gradient(to right, #cd9e1d, #e18708);
+        border-radius: 100px ;
+        z-index: 88;
+        transition:all .5s ease-in-out;
+        
+      }
+
+    
+        &:hover{
+            .overlayer{
+          width:auto;
+          height:auto;
+          left:5px;
+          right:5px;
+          top:5px;
+          bottom:5px;
+          border-radius:10px;
+          z-index: 5;
+        }
+
+    }
+    .ptext{
+      color: #fff;
+      position: relative;
+      z-index: inherit;
+      text-decoration: none;
+    }
+    
+  } 
+}
+
+@media screen and (max-width:420px) {
+  h1{
+    color:rgb(200, 243, 82);
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    position: relative;
+    z-index: 100;
+    padding: 0%;
+    font-size: x-large;
+    font-display: 10px;
+  }
+  
+}
+
+@media screen and(max-width:290px) {
+  .ptext{
+    font-size: small;
+  }
+
+}
+  
+
 h4{
   color:#fff; 
   z-index:100;
@@ -140,14 +262,8 @@ h4{
 }
  
 
-.ptext{
-  color: #fff;
-  z-index: inherit;
-}
 
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create flexible columns */
-  gap: 20;
-}
+
+
+
  
