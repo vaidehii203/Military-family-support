@@ -1,0 +1,89 @@
+*{
+    overflow-x: clip;
+  }
+  
+  .header{
+      background:linear-gradient(to right,rgba(130, 153, 45, 0.974), rgba(125, 125, 66, 0.917), rgba(40, 73, 40, 0.917));
+      position: fixed;
+      width: 100%;
+      z-index: 200;
+  }
+  
+  .nav-link{
+    display: flex;
+    justify-items:space-between;
+  }
+  
+  
+  .btn-gold {
+      background-color: rgb(214, 102, 32);
+      -webkit-clip-path: polygon(0 0,calc(100% - 1rem) 0,100% 50%,calc(100% - 1rem) 100%,0 100%);
+      clip-path: polygon(0 0,calc(100% - 1rem) 0,100% 50%,calc(100% - 1rem) 100%,0 100%);
+      color: #111;
+      cursor: pointer;
+      font-size: .9rem;
+      font-weight: 700;
+      padding: 1rem 3.25rem 1rem 2rem;
+      position: relative;
+      text-transform: uppercase;
+      transition: .25s;
+      z-index: 1;
+      height: fit-content;
+  }
+  
+  .btn-gold:hover{
+      background-color: rgb(126, 94, 15);
+  }
+  
+  
+  input[name=search_input] {
+      background-color: rgba(13, 57, 5, 0);
+      border: none;
+      border-bottom: 1px solid #fff;
+      box-shadow: none;
+      color: #fff;
+      margin: 0;
+      max-width: 20rem;
+      padding: .5rem;
+      width: 100%;
+  }
+  
+  button[name=search]{
+      background-color: rgba(13, 57, 5, 0);
+      border: none;
+  }
+   .search {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      object-fit: cover;
+      z-index: -1; /* Puts the video behind the content */
+    }
+  
+    h1{
+      color:rgb(200, 243, 82);
+      font-weight: bold;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+    }
+  
+    .lead{
+      color: #fff;
+      z-index: 100;
+    }
+  
+   .footer{
+    background:linear-gradient(to right,rgba(130, 153, 45, 0.974), rgba(125, 125, 66, 0.917), rgba(40, 73, 40, 0.917));
+      width: 100%;
+   }
+   hr{
+    color: #fff;
+   }
