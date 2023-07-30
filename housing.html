@@ -3,10 +3,404 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/housing.css">
+    <title>Housing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/health.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha384-ZwVa1S/NX6dEzJaHv2OILVrnj7ERqTH6pd/ubsDTHTrgAEz2kUufO/KLo6frtnOB"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo.svg.svg">
 </head>
 <body>
+    <section class="header">
+        <header>
+        <img src="./images/logo.jpeg" alt="SainikaKulSeva logo" height="6%" width="8%">
+        <span style=" font-family:'Cinzel', serif; font-weight:bolder ; font-size: xx-large; color:rgb(255, 255, 255);">SainikaKulSeva</span>
+        <nav id = "space">
+            <a href="index.html">Home</a>
+            <a href="#pl">Property listing</a>
+            <a href="#fa">Financial Aid</a>
+            <a href="#ptr">Points to consider</a>
+            <a href="#Support">Support</a>
+        </nav>
+        </header>
+    </section>
     
+    <main>
+        <section class ="bg">
+        <div>
+            <h3>Welcome to the Housing Section of SainikaKulSeva !</h3>
+        </div>
+        <div>
+            <p class="intro"> 
+                At SainikaKulSeva, we take pride in offering a wide range of exceptional housing solutions tailored to your unique needs. Whether you're searching for your dream home, a cozy apartment, or a spacious villa, we've got you covered.
+
+                Our housing webpage provides an extensive listing of available properties, each carefully curated to offer comfort, convenience, and quality living. Explore a diverse selection of properties, from modern urban dwellings to serene countryside retreats.
+                
+                With a user-friendly interface and comprehensive property details, finding your perfect home has never been easier. Browse through stunning property photos, delve into the amenities that suit your lifestyle, and discover the nearby facilities that make each location desirable.
+            </p>
+           
+        </div>
+        <div>
+            <h5>Whether you're a first-time buyer, a seasoned investor, or a military personnel seeking accommodation near bases, we are committed to guiding you toward your ideal housing solution.</h5>
+        </div>
+        <div>
+            <p class="intro">
+                We stand by our promise to ensure that our military heroes and their families have access to quality housing options that offer security, convenience, and a welcoming environment. Your comfort and happiness are at the heart of everything we do.
+                Thank you for your service, dedication, and sacrifices. We are honored to serve you in return. Begin your search for the perfect military welfare housing now and let us be a part of your journey toward a place you can proudly call home.
+                Welcome to our Military Welfare Housing Webpage, where we take care of those who take care of us.
+            </p>
+        </div>
+
+        <div class="quotes">
+            <p>"Housing is more than just shelter; it's a sanctuary where military families find comfort, create memories, and weather life's storms together."</p>
+        </div>
+
+
+            <section id="pl">  
+            <div class="left">
+                
+  <style>
+    
+    .address-container {
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #09821c, #52391c);
+      padding: 15px;
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .address {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .amenities {
+      margin-top: 5px;
+    }
+
+    .book-btn {
+      background-color: #fff;
+      color: #007BFF;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .book-btn:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Book a property as per your requirements.</h2>
+
+  <div class="address-container">
+    <div class="address">123 Maple Street, Bangalore, Karnataka, Pincode-560001</div>
+    <div class="amenities">
+      <b>Amenities:</b><br>
+      - 3 Bedrooms, 2 Bathrooms<br>
+      - Spacious backyard with a garden<br>
+      - Modern kitchen with modular fittings<br>
+      - Proximity to schools, parks, and markets
+    </div>
+    <button class="book-btn" onclick="bookHouse('123 Maple Street')">Book</button>
+  </div>
+
+  <div class="address-container">
+    <div class="address">456 Oak Avenue, Mumbai, Maharashtra, Pincode-400001</div>
+    <div class="amenities">
+      <b>Amenities:</b><br>
+      - 4 Bedrooms, 3.5 Bathrooms<br>
+      - Private swimming pool with a sun deck<br>
+      - Home office/study room with built-in shelves<br>
+      - Conveniently located near shopping centers and restaurants
+    </div>
+    <button class="book-btn" onclick="bookHouse('456 Oak Avenue')">Book</button>
+  </div>
+
+  <div class="address-container">
+    <div class="address">123 Patriots Lane, Delhi Cantt, New Delhi, Pincode-110010 </div>
+    <div class="amenities">
+      <b>Amenities:</b><br>
+      - 3 Bedrooms, 2 Bathrooms<br>
+      - Gated community with 24/7 security<br>
+      - Spacious living room with modern furnishings<br>
+      - Air-conditioning in all rooms<br>
+      - Fitness center and sports facilities<br>
+      - Proximity to Delhi Cantt station and military facilities
+    </div>
+    <button class="book-btn" onclick="bookHouse('123 Patriots Lane')">Book</button>
+  </div>
+
+  <div class="address-container">
+    <div class="address">256 Braveheart Avenue, Camp Pune, Maharashtra, Pincode-411001</div>
+    <div class="amenities">
+      <b>Amenities:</b><br>
+     -  2 Bedrooms, 1 Bathroom<br>
+     - Fully furnished with essential appliances<br>
+     - Peaceful neighborhood with lush greenery<br>
+     - Playground for children<br>
+     - Close to Camp Pune military base and hospitals
+    </div>
+    <button class="book-btn" onclick="bookHouse('256 Braveheart Avenue')">Book</button>
+  </div>
+
+  <div class="address-container">
+    <div class="address">789 Valor Street, Naval Base Vizag, Visakhapatnam, Pincode-530014</div>
+    <div class="amenities">
+      <b>Amenities:</b><br>
+      - 4 Bedrooms, 3 Bathrooms<br>
+      - Sea-facing property with stunning views<br>
+      - Modular kitchen with modern fittings<br>
+      - Swimming pool and clubhouse<br>
+      - Nearby Naval Base facilities and schools
+    </div>
+    <button class="book-btn" onclick="bookHouse('789 Valor Street')">Book</button>
+  </div>
+
+  <div class="address-container">
+    <div class="address">101 Sentinel Road, Air Force Station Agra, Uttar Pradesh, Pincode-282008</div>
+    <div class="amenities">
+      <b>Amenities:</b><br>
+      - 3 Bedrooms, 2.5 Bathrooms<br>
+      - Secure and well-maintained neighborhood<br>
+      - Covered parking and garden space<br>
+      - Access to Air Force Station facilities<br>
+      - Conveniently located near schools and shopping centers
+    </div>
+    <button class="book-btn" onclick="bookHouse('101 Sentinel Road')">Book</button>
+  </div>
+
+  <div class="address-container">
+    <div class="address">222 Freedom Lane, Army Base Secunderabad, Hyderabad, Pincode-500025</div>
+    <div class="amenities">
+      <b>Amenities:</b><br>
+      - 3 Bedrooms, 2 Bathrooms<br>
+      - Modern interiors and spacious rooms<br>
+      - Children's play area and parks<br>
+      - Easy access to Army Base amenities and medical centers<br>
+      - Well-connected to major highways and public transport
+    </div>
+    <button class="book-btn" onclick="bookHouse('222 Freedom Lane')">Book</button>
+  </div>
+
+
+
+  <script>
+    
+    function bookHouse(address) {
+      alert('Booking the house at ' + address + '.');
+      
+    }
+  </script>
+</body>
+           
+</div>
+</section>
+<section id="fa">
+            </div>
+            <h2 style="text-align: center;">Financial Aid</h2>
+            <br>
+            <div class="note">
+                <h6>Note on Housing Help During Financial Struggles:</h6>
+                <P> Dear Valued Military Personnel and Families,
+
+                    At SainikaKulSeva, we understand that life's challenges can sometimes lead to financial hardships, and we are committed to supporting you every step of the way. 
+                    We recognize that housing is a fundamental aspect of your well-being and stability, and we are here to provide assistance during times of financial difficulty.
+                    If you or your family are facing financial struggles that affect your ability to maintain suitable housing, we want you to know that we are here to help.
+                    Our Military Welfare Housing Program is designed to provide support and solutions to ensure that you have a safe and comfortable place to call home.
+                    For more information, click on the button below.
+                </P>
+
+                <title>button</title>
+                <script>
+                    function welcome() {
+                        window.open("./finan_sec.html")
+                    }
+
+                </script>
+                <body style="text-align:center"> 
+                <button onclick="welcome()">Financial security</button>   
+
+            </div>
+            </section>
+        
+
+
+            <section id="ptr">
+            <div class="right">
+            
+            <h2 >Points to consider!</h2>
+            <p >
+                Before booking a house through the Military Welfare Housing Webpage, users must consider the following points to ensure they make an informed decision that best suits their needs:
+            </p>
+            <ol>
+                <li>
+                    <h4>Eligibility Criteria:</h4> 
+                    <p>Verify whether you meet the eligibility requirements to access the housing assistance programs offered by the military welfare organization.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Budget and Affordability:</h4>
+                    <p>Assess your financial situation and determine a budget for housing costs.
+                     Consider factors like monthly rent, utility expenses, and any additional fees.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Location:</h4> 
+                    <p>Evaluate the location of the property in relation to your workplace, schools for children, and nearby military facilities.
+                     Ensure that the commute is reasonable and convenient.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Amenities and Features: </h4> 
+                    <p>Review the amenities offered by the housing unit, such as the number of bedrooms and bathrooms, kitchen facilities, parking availability, and any special accommodations required.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Lease Terms and Conditions: </h4> 
+                    <p>Thoroughly read and understand the lease agreement, including the rental duration, security deposit requirements, rules on pet ownership, and maintenance responsibilities.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Safety and Security: </h4> 
+                    <p>Inquire about the security measures implemented in the housing community, such as gated entries, surveillance systems, and on-site security personnel.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Accessibility: </h4>
+                    <p>  Consider the accessibility of public transportation, major highways, and essential services like grocery stores, medical facilities, and recreational areas.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Community Environment: </h4>
+                    <p>  Research the community atmosphere to ensure it aligns with your preferences. Look for a supportive and welcoming neighborhood with a sense of camaraderie among residents.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Schools and Education: </h4>
+                    <p>If you have children, investigate the nearby schools and educational institutions, as well as the quality of education they offer.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Reputation and Reviews:</h4>
+                    <p>Look for reviews or testimonials from current or previous residents to gain insights into their experiences living in the housing community.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Financial Assistance Programs: </h4>
+                    <p> nquire about any financial assistance programs available to military personnel, veterans, or their families that may help with housing costs.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Future Plans: </h4>
+                    <p>  Consider your long-term plans and whether the housing option aligns with your future goals and aspirations.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Housing Support Team: </h4>
+                    <p>  Reach out to the housing support team for any clarifications or additional information you may require. They can assist in addressing your concerns and guiding you through the booking process.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Comparison: </h4>
+                    <p>Compare multiple housing options to find the one that best suits your needs and preferences.
+                    </p>
+                </li>
+        
+                <li>
+                    <h4>Health and Safety Measures: </h4>
+                    <p> Inquire about any health and safety measures in place, especially during ongoing situations such as pandemics or natural disasters.
+                    </p>
+                </li>
+
+                <h4>By carefully considering these points, users can make well-informed decisions and choose the housing option that provides comfort, security, and a sense of community while meeting their unique requirements.</h4>
+        
+                
+                    
+            </ol>
+           
+            </div>
+            </section>
+
+            </div>
+            </section>
+             
+
+           
+                <section id="Support">
+                    <div class="note">
+                    <h2 style="text-align: center;">Support</h2>
+                    <p >
+                        We are dedicated to wholeheartedly supporting our military personnel, veterans, and their families by providing a wide array of comprehensive resources.
+                        Below are some of the key support services we offer to help you navigate through various challenges and transitions in life. 
+                    </p>
+                    <style>
+                        div {
+                          text-align: left;
+                        }
+                      </style>
+                      <div>
+     <ul>
+        <li><strong>Veterans Crisis Line:</strong>       1-800-273-8255, Press 1</li>
+        <li><strong>Military Crisis Line:</strong>       988, Press 1</li>
+    
+        <li><strong>TRICARE:</strong><a href="https://www.tricare.mil" class="support" target="_blank">www.tricare.mil</a> (Healthcare program for military members and their families)</a></li>
+    
+        <li><strong>Military Family Support Center:</strong><a href="https://www.militaryonesource.mil/family-support" class="support" target="_blank">www.militaryonesource.mil/family-support</a></a></li>
+    
+        <li><strong>Department of Veterans Affairs (VA) Financial Assistance:</strong><a href="https://www.benefits.va.gov/benefits" class="support" target="_blank">www.benefits.va.gov/benefits</a></a></li>
+        <li><strong>Veterans Employment Center:</strong><a href="https://www.ebenefits.va.gov/ebenefits/jobs" class="support" target="_blank">www.ebenefits.va.gov/ebenefits/jobs</a></a></li>
+
+        <li><strong>GI Bill:</strong><a href="https://www.va.gov/education/about-gi-bill-benefits" class="support" target="_blank">www.va.gov/education/about-gi-bill-benefits</a></a></li>
+        <li><strong>VA Legal Assistance:</strong><a href="https://www.va.gov/ogc/legalservices.asp" class="support" target="_blank">www.va.gov/ogc/legalservices.asp</a></a></li>
+        <li><strong>Veterans Peer Support Network:</strong><a href="https://www.va.gov/vetcenter/vet-peer.asp" class="support" target="_blank">www.va.gov/vetcenter/vet-peer.asp</a></a></li>
+    </ul>
+                </div>
+                </div>
+                </section>
+        </section>
+    </main>
+ 
+
+<!--Footer-->
+<section class="footer" id="contact">
+    <hr>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 px-5 mt-8 ">
+       
+        <div class=" container col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class=" mb-md-0 text-light">© 2023 SainikaKulSeva, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a href="#"><img src="./images/instagram-167-svgrepo-com.svg" alt="Instagram logo" srcset="" height="30"></a>
+          </li>
+          <li class="ms-3"><a href="#"><img src="./images/linkedin-svgrepo-com.svg" alt="Linkedin logo" height="30"></a></li>
+          <li class="ms-3"><a href="#"><img src="./images/twitter-3-svgrepo-com.svg" alt="Twitter logo" srcset="" height="30"></a></li>
+          <li class="ms-3"><a href="#"><img src="./images/facebook-svgrepo-com.svg" alt="facebook logo" srcset="" height="30"></a></li>
+        </ul>
+      </footer>
+  </section>
 </body>
 </html>
