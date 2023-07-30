@@ -2,11 +2,124 @@
     overflow-x: clip;
   }
   
+  a{
+    padding-left: 8%;
+    color: #fff;
+    text-decoration: none;
+    font-size: medium;
+  }
+  a:hover{
+    color: rgb(6, 147, 241);
+  }
+
+  .support{
+    color: #000000;
+  }
+
+  .quotes{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #627204;
+    font-size:large;
+    margin-top:2% ;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  h3{
+    text-align: center;
+    color:rgb(55, 82, 2);
+    font-size:xx-large;
+    font-weight: bold;
+  }
+
+  .intro{
+    font-size:larger;
+    line-height: normal;
+    text-align: justify;
+  }
+  .bg{
+    padding-top:  6%;;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: justify;
+  }
+
+  ol{
+    list-style:decimal;
+    color: black;
+    padding: auto;
+  }
+
+
+  div{
+    width:100%;
+    height:min-content;
+    margin: 2px;
+    padding: 3%;
+  }
+
+  h2{
+    text-align: left;
+    font-weight: bold;
+  }
+  .linespace{
+    line-height:2em ;
+  }
+  strong{
+    font-size: large;
+  }
+  h5{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold;
+    color: rgba(76, 111, 19, 0.917); 
+    text-align: center;
+    font-size: x-large;
+  }
+
   .header{
       background:linear-gradient(to right,rgba(130, 153, 45, 0.974), rgba(125, 125, 66, 0.917), rgba(40, 73, 40, 0.917));
       position: fixed;
+      max-height: 30%;
       width: 100%;
       z-index: 200;
+  }
+
+  .note{
+    text-align: center;
+    border: #88ad2b;
+    border-style: solid;
+    width: 70%;
+    margin-left: 18%;
+    background-color: #fbffe1;
+  }
+
+  .left{
+    position:relative;
+    max-width:max-content;
+    padding: 4%;
+
+  }
+
+  .imgright{
+    float: right;
+    width: 400px;
+    height: 300px;
+    margin-left: 3%;
+  }
+
+  .right{
+    position: relative ;
+    max-width: fit-content ;
+    padding: 4%;
+  }
+
+  .imgleft{
+    float: left;
+    width: 400px;
+    height: 300px;
+    margin-right: 3%;
   }
   
   .btn-gold {
@@ -54,5 +167,7 @@
 
   .footer{
     background:linear-gradient(to right,rgba(130, 153, 45, 0.974), rgba(125, 125, 66, 0.917), rgba(40, 73, 40, 0.917));
-      width: 100%;
+    position: relative;
+    width: 100%;
+    max-height: 30%;
    }
